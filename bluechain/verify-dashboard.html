@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verifier Dashboard | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+</header>
+
+<!-- 🧭 VERIFIER INFO STRIP -->
+<section class="verifier-info-strip">
+
+  <!-- LEFT: ROLE EXPLANATION -->
+  <div class="verifier-role-card">
+    <h4>🔍 Role of a Verifier</h4>
+    <p>
+      Verifiers independently validate restoration projects,
+      confirm legitimacy, and allocate land responsibly.
+    </p>
+    <p class="muted">
+      Their approval is mandatory before carbon credits
+      can be issued by authorities.
+      <p></p>
+      <strong>Scroll down to approve projects</strong>
+    </p>
+  </div>
+
+  <!-- RIGHT: LOGGED-IN BADGE -->
+  <div class="verifier-identity-card">
+    <span class="badge-label">Logged in as</span>
+    <h3>🧑‍🔬 Verifier</h3>
+    <p class="badge-sub" id="verifierEmail">
+      <!-- injected by JS -->
+    </p>
+  </div>
+
+</section>
+
+<!-- HEADER -->
+<section class="projects-header" style="margin-top:20px;">
+  <h2>Pending Project Verifications</h2>
+  <p>
+    Review legitimacy, verify project intent, and allocate restoration land.
+  </p>
+</section>
+
+<!-- 🌱 DID YOU KNOW CARD -->
+<section class="projects-grid">
+  <div class="project-card">
+    <div class="project-body">
+      <h3>🌍 Did you know?</h3>
+      <p class="meta">
+        Verifiers play the most critical role in BlueChain.
+        A single incorrect approval can invalidate thousands of carbon credits.
+        That’s why every verification action is logged and auditable.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT LIST -->
+<section class="projects-header" style="margin-top:40px;">
+  <h2>Pending Project Verifications</h2>
+  <p>
+    Only projects awaiting verification appear below.
+    Approved projects move forward to land allocation and credit approval.
+  </p>
+</section>
+
+<section class="projects-grid" id="verifierProjects">
+  <!-- Injected by script.js -->
+</section>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

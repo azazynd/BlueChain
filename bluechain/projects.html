@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Projects | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+</header>
+
+<!-- ================= HEADER ================= -->
+<section class="projects-header">
+  <h1>Public Transparency Ledger</h1>
+  <p>
+    This is BlueChain’s public blockchain layer.
+    Only projects with <strong>verified and allotted carbon credits</strong>
+    are visible here.
+  </p>
+</section>
+
+<!-- ================= INFO / FACT CARDS ================= -->
+<section class="projects-grid">
+
+  <div class="project-card">
+    <div class="project-body">
+      <h3>🌊 Did you know?</h3>
+      <p class="meta">
+        Mangroves, salt marshes, and seagrass store up to
+        <strong>5× more carbon per hectare</strong> than tropical forests.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-body">
+      <h3>🔗 Blockchain Principle</h3>
+      <p class="meta">
+        Once carbon credits are allotted, records become immutable.( we apply Blockchain logic here)
+        No edits. No manipulation. Only transparency.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+<div class="project-search">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search by project name or organization..."
+  />
+</div>
+
+<!-- ================= PUBLIC PROJECTS ================= -->
+<section class="projects-grid" id="publicProjects">
+  <!-- ✅ JS injects projects here -->
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

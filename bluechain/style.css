@@ -1,0 +1,976 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f9fbf9;
+  color: #1f2933;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #e9f6ef;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1b7f5a;
+}
+
+.nav-pills {
+  display: flex;
+  gap: 14px;
+}
+
+.pill {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #dff1e8;
+  text-decoration: none;
+  font-weight: 500;
+  color: #245c44;
+  transition: all 0.25s ease;
+}
+
+.pill:hover {
+  background: #1b7f5a;
+  color: white;
+}
+
+.pill.active {
+  background: #1b7f5a;
+  color: white;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  min-height: 70vh;
+  padding-left: 60px;
+  position: relative; /* ✅ ADD THIS */
+}
+
+
+.hero-text {
+  width: 60%;
+  padding-top: 60px;
+  padding-right: 40px;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  color: #1b7f5a;
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  max-width: 620px;
+}
+
+/* DID YOU KNOW */
+.did-you-know {
+  background: #ffffff;
+  border-left: 5px solid #1b7f5a;
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin: 22px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.did-you-know span {
+  font-weight: 600;
+  color: #1b7f5a;
+}
+
+.did-you-know p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+/* HERO BUTTONS */
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn.primary {
+  background: #4f8f68;
+  color: white;
+}
+
+.btn.outline,
+.btn.secondary {
+  background: transparent;
+  color: #4f8f68;
+  border: 2px solid #4f8f68;
+}
+
+/* HERO IMAGE (INDEX PAGE) */
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 38%;
+  height: 100%; /* FULL height after navbar */
+
+  background-image: url("images/mangrove-hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0,0,0,1) 70%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-image: linear-gradient(
+    to left,
+    rgba(0,0,0,1) 70%,
+    rgba(0,0,0,0) 100%
+  );
+
+  z-index: 1;
+}
+
+/* ================= HOW ================= */
+.how {
+  padding: 40px 60px;
+  background: #eef6f1;
+}
+
+.steps {
+  display: flex;
+  gap: 16px;
+}
+
+.step {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* ================= REGISTER PAGE ================= */
+.register-bg {
+  position: fixed;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(247,250,246,0.75),
+      rgba(247,250,246,0.75)
+    ),
+    url("images/mangrove-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.register-card {
+  background: rgba(255,255,255,0.94);
+  padding: 42px;
+  width: px; 
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+
+.register-card h1 {
+  margin-bottom: 6px;
+}
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* not center vertically */
+  padding-top: 80px; /* moved UP */
+  padding-bottom: 60px;
+}
+
+.subtext {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #2f6f4e;
+  box-shadow: 0 0 0 2px rgba(47,111,78,0.15);
+}
+
+.submit-btn {
+  margin-top: 24px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  background: #2f6f4e;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* PROJECTS PAGE HEADER */
+.projects-header {
+  text-align: center;
+  padding: 70px 40px 30px;
+}
+
+.projects-header h1 {
+  font-size: 2.7rem;
+  color: #1b7f5a;
+  margin-bottom: 14px;
+}
+
+.projects-header p {
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  padding: 40px 60px 80px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;                /* 🔥 IMPORTANT */
+  background-color: #eee;        /* fallback */
+}
+
+.project-body {
+  padding: 18px;
+}
+
+.project-body h3 {
+  margin-bottom: 6px;
+  color: #1b7f5a;
+}
+
+.project-body .org {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.project-body .meta {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* STATUS BADGES */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status.verified {
+  background: #e6f5ee;
+  color: #1b7f5a;
+}
+
+.status.pending {
+  background: #fff4e5;
+  color: #b36a00;
+}
+.project-search {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+
+.project-search input {
+  width: 60%;
+  max-width: 600px;
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 2px solid #cfe7db;
+  font-size: 0.95rem;
+  background: #f4fbf7;
+  transition: all 0.25s ease;
+}
+
+.project-search input:focus {
+  outline: none;
+  border-color: #1b7f5a;
+  box-shadow: 0 0 0 3px rgba(27,127,90,0.15);
+}
+/* CREDIT ROLE CARDS */
+.credit-role-card {
+  flex: 1;
+  min-width: 240px;
+  background: #f6fbf8;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.credit-role-card h3 {
+  margin-bottom: 8px;
+  color: #1b7f5a;
+}
+
+.credit-role-card p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 18px;
+}
+.image-guidelines {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: #f3faf7;
+  border-left: 5px solid #1b7f5a;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.image-guidelines h4 {
+  margin-bottom: 6px;
+  color: #1b7f5a;
+}
+
+.image-guidelines ul {
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+.image-guidelines li {
+  margin-bottom: 4px;
+}
+
+.image-guidelines .example {
+  font-size: 0.8rem;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.image-guidelines .note {
+  font-size: 0.75rem;
+  color: #b33a3a;
+  margin-top: 6px;
+}
+
+/* ============================= */
+/* 🌍 PUBLIC INFO / FACT CARDS */
+/* ============================= */
+
+.project-card .project-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.project-card .project-body p.meta {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Highlight info-only cards */
+.project-card:has(h3:contains("Did you know")),
+.project-card:has(h3:contains("Why BlueChain")),
+.project-card:has(h3:contains("Blockchain Principle")) {
+  background: linear-gradient(135deg, #f2fff9, #ffffff);
+  border-left: 6px solid #1b7f5a;
+}
+
+/* ================= CARBON ESTIMATE CARD ================= */
+.carbon-card {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #e6fff4, #f0fff9);
+  border: 1px solid rgba(27, 127, 90, 0.2);
+  text-align: center;
+}
+
+.carbon-card h3 {
+  font-size: 1rem;
+  color: #1b7f5a;
+  margin-bottom: 10px;
+}
+
+.carbon-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f5132;
+}
+
+.carbon-value .unit {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-left: 6px;
+}
+
+.carbon-hint {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #666;
+}
+.credit-box {
+  background: #f4fdf9;
+  border-left: 4px solid #1b7f5a;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.pay-btn {
+  margin-top: 12px;
+  background: #1b7f5a;
+}
+
+.cancel-btn {
+  margin-top: 12px;
+  background: #d9534f;
+}
+/* ===============================
+   🧭 PROJECT OWNER FLOW CARD
+================================ */
+
+.flow-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 22px 24px;
+  max-width: 420px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  animation: fadeUp 0.6s ease;
+}
+
+.flow-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #1b7f5a;
+}
+
+.flow-sub {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.flow-steps {
+  padding-left: 18px;
+  margin: 0 0 12px;
+}
+
+.flow-steps li {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.flow-note {
+  font-size: 0.8rem;
+  color: #a94442;
+  background: #fff3f3;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.register-info {
+  flex: 1;
+  max-width: 420px;
+}
+
+.register-card {
+  flex: 1;
+}
+
+/* 🧭 Project Owner Flow Card */
+.flow-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 22px 26px;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-left: 32px;
+}
+
+.flow-card h3 {
+  margin-bottom: 8px;
+  color: #1b7f5a;
+}
+
+.flow-sub {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.flow-steps {
+  padding-left: 18px;
+  font-size: 0.9rem;
+}
+
+.flow-steps li {
+  margin-bottom: 6px;
+}
+
+.flow-note {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #c0392b;
+}
+
+.hero {
+  align-items: center;
+}
+
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+}
+/* ===== MINI FLOW CARD (INDEX HERO) ===== */
+.flow-card.mini {
+  margin-top: 16px;
+  padding: 14px 16px;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 4px solid #1b7f5a;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.flow-card.mini h4 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  color: #1b7f5a;
+}
+
+.flow-card.mini p {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.flow-card.mini .flow-note {
+  font-size: 0.75rem;
+  color: #b04a3a;
+}
+
+/* ===== REGISTER PAGE HELPER CARD ===== */
+.register-section {
+  position: relative;
+}
+
+.register-helper {
+  position: absolute;
+  left: 6%;
+  top: 18%;
+  max-width: 340px;
+}
+
+/* ===== REGISTER PAGE TWO COLUMN LAYOUT ===== */
+
+.register-container {
+  display: grid;
+  grid-template-columns: 320px minmax(80px, 1fr) minmax(600px, 720px);
+  gap: 40px;
+  align-items: start;
+}
+
+/* LEFT CARD */
+.register-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flow-card.mini {
+  max-width: 320px;
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.92);
+  border-left: 4px solid #1b7f5a;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+/* RIGHT FORM */
+.register-right {
+  display: flex;
+  justify-content: center;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 720px; /* 👈 THIS STOPS STRETCHING */
+}
+
+
+/* ===============================
+   FORCE CENTER REGISTER FORM
+   (OVERRIDE EVERYTHING ABOVE)
+=============================== */
+
+.register-container {
+  display: grid !important;
+  grid-template-columns: 320px 1fr 1fr !important;
+  gap: 40px !important;
+}
+
+/* LEFT CARD — keep as is */
+.register-left {
+  justify-self: start !important;
+}
+
+/* RIGHT COLUMN — THIS IS THE FIX */
+.register-right {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* FORM ITSELF */
+.register-right .register-card {
+  width: 100% !important;
+  max-width: 720px !important;
+  margin: 0 auto !important;
+}
+
+/* ===============================
+   🛡️ ADMIN LOGIN PAGE LAYOUT
+   =============================== */
+
+.admin-login-layout {
+  display: flex;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+/* LEFT DEMO CARD */
+.demo-card {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #1b7f5a;
+}
+
+.demo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #1b7f5a;
+}
+
+.demo-sub {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.demo-creds {
+  background: #f3f7f5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.demo-creds p {
+  margin: 6px 0;
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.demo-note {
+  font-size: 0.8rem;
+  color: #a94442;
+}
+
+/* KEEP FORM CENTERED */
+.register-card {
+  margin: 0 auto;
+}
+
+.nav-pills .pill.owner {
+  background: #1b7f5a;
+  color: white;
+  font-weight: 600;
+}
+
+/* 🧪 Demo Login Layout */
+.login-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🧪 Demo Info Card */
+.demo-card {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.demo-card h3 {
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.demo-sub {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.demo-list {
+  font-size: 0.85rem;
+  padding-left: 18px;
+  margin-bottom: 14px;
+}
+
+.demo-list li {
+  margin-bottom: 4px;
+}
+
+.demo-creds {
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.demo-creds p {
+  margin: 6px 0;
+}
+
+.demo-note {
+  font-size: 0.75rem;
+  color: #666;
+}
+/* 🧭 Admin Info Strip */
+.admin-info-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 20px auto 40px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* LEFT: Demo Hint */
+.admin-hint-card {
+  max-width: 420px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+.admin-hint-card h4 {
+  margin-bottom: 6px;
+}
+
+/* RIGHT: Identity Badge */
+.admin-identity-card {
+  text-align: right;
+  background: #0f172a;
+  color: #fff;
+  border-radius: 14px;
+  padding: 16px 22px;
+  min-width: 300px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.25);
+}
+
+.badge-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.badge-sub {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+/* 🧭 Verifier Info Strip */
+.verifier-info-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 20px auto 30px;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+/* LEFT: Role explanation */
+.verifier-role-card {
+  max-width: 420px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.verifier-role-card .muted {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 6px;
+}
+
+/* RIGHT: Identity badge */
+.verifier-identity-card {
+  background: #0f172a;
+  color: #fff;
+  border-radius: 14px;
+  padding: 16px 22px;
+  min-width: 280px;
+  text-align: right;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.25);
+}
+/* ===============================
+   VERIFIER LOGIN – LEFT INFO CARD
+   =============================== */
+
+.verifier-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.info-card {
+  background: #ffffffcc;
+  border-left: 6px solid #1b7f5a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-size: 0.9rem;
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+  color: #1b7f5a;
+}
+
+.info-card ul {
+  padding-left: 18px;
+  margin: 10px 0;
+}
+
+.info-card li {
+  margin-bottom: 6px;
+}
+/* 👤 Logged-in badge */
+.logged-badge {
+  position: sticky;
+  top: 72px;
+  margin: 16px 24px;
+  padding: 10px 14px;
+  width: fit-content;
+  background: #eaf7f1;
+  color: #1b7f5a;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #bfe6d5;
+}
+
+.owner-badge {
+  margin-left: 24px;
+}

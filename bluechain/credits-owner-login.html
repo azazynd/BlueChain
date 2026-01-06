@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Owner Login | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+</header>
+
+<!-- LOGIN LAYOUT -->
+<section class="register-section">
+  <div class="login-layout">
+
+    <!-- 🧪 DEMO INFO CARD (LEFT) -->
+    <div class="demo-card">
+      <h3>🧪 Demo Account</h3>
+      <p class="demo-sub">
+        For SIH judging & demo purposes
+      </p>
+
+      <ul class="demo-list">
+        <li>✔ Rejected project</li>
+        <li>✔ Verified project</li>
+        <li>✔ Credits allotted</li>
+        <li>✔ Payment completed</li>
+        <li>✔ Certificate generated</li>
+      </ul>
+
+      <div class="demo-creds">
+        <p><strong>Email</strong><br>godrej@gmail.com</p>
+        <p><strong>Password</strong><br>17232426</p>
+      </div>
+
+      <p class="demo-note">
+        ⚠️ Use this account to view all project stages at once.
+      </p>
+    </div>
+
+    <!-- 🔐 LOGIN FORM (CENTER) -->
+    <div class="register-card" style="max-width:520px;">
+
+      <h1>Project Owner Login</h1>
+      <p class="subtext">
+        Login to view the carbon credits allotted to your restoration projects.
+      </p>
+
+      <!-- 🔥 IDs MATCH script.js EXACTLY -->
+      <form id="ownerLoginForm">
+
+        <label>Official Email</label>
+        <input
+          type="email"
+          id="ownerLoginEmail"
+          placeholder="official@email.com"
+          required
+        />
+
+        <label>Password</label>
+        <input
+          type="password"
+          id="ownerLoginPassword"
+          placeholder="Password"
+          required
+        />
+
+        <p id="ownerLoginError"
+           style="color:#d9534f; font-size:0.85rem; display:none;">
+          Invalid login credentials. Please try again.
+        </p>
+
+        <button type="submit" class="submit-btn">
+          Login
+        </button>
+      </form>
+
+      <p style="margin-top:14px; font-size:0.85rem; text-align:center;">
+        New project owner?
+        <a href="credits-owner-register.html"
+           style="color:#1b7f5a; font-weight:600;">
+          Register here
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

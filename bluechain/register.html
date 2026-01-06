@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register Project | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="register-bg"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">BlueChain</div>
+    <div class="nav-pills">
+      <a href="index.html" class="pill active">Home</a>
+      <a href="register.html" class="pill">Register a Project</a>
+      <a href="verify-login.html" class="pill">Verifier Page</a>
+      <a href="projects.html" class="pill">Public Ledger</a>
+      <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+      <a href="credits.html" class="pill">Authority Login</a>
+    </div>
+  </nav>
+
+  <!-- REGISTER FORM -->
+  <section class="register-section">
+    <!-- 🧭 PROJECT OWNER FLOW CARD -->
+    <div class ="register-container"> 
+      <div class="register-left">
+        <div class="flow-card mini">
+          <h4>🚀 Before You Register a Project</h4>
+            <p class="flow-sub">
+              Projects can only be submitted by verified project owners.
+            </p>
+            <ol class="flow-steps">
+              <li>
+                Go to <strong>Project Owner Login</strong> → Login with given <strong>Username and password</strong>
+              </li>
+              <li>
+                If new, click <strong>Register as Project Owner</strong>
+              </li>
+              <li>
+                Register using your <strong>official organization email</strong>
+              </li>
+              <li>
+                Login again with the same email & password
+              </li>
+              <li>
+                Come back and <strong>Register Your Project</strong>
+              </li>
+            </ol>
+            <p class="flow-note">
+              ⚠️ The contact email used at project registration must match
+              your Project Owner account email.
+            </p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
+    <div class="register-right">
+      <div class="register-card">
+        <h1>Register a Restoration Project</h1>
+        <p class="subtext">
+          Submit real restoration work for expert verification and transparent
+          blue carbon tracking.
+        </p>
+        
+        <form id="projectForm">
+          
+          <label>Project Name</label>
+          <input
+          id="projectName"
+          type="text"
+          placeholder="Give a name to your project"
+          required
+          />
+          
+          <label>Organization / Company</label>
+          <input
+          id="organization"
+          type="text"
+          placeholder="abc pvt ltd"
+          required
+          />
+          
+          <label>Ecosystem Type</label>
+          <select id="ecosystem" required>
+            <option value="">Select ecosystem</option>
+            <option value="Mangrove">Mangrove</option>
+            <option value="Seagrass">Seagrass</option>
+            <option value="Salt Marsh">Salt Marsh</option>
+          </select>
+          <label>Area to be Restored (hectares)</label>
+          <input
+          id="area"
+          type="number"
+          step="0.1"
+          placeholder="12.5"
+          required
+          />
+          
+          <!-- ================= CARBON ESTIMATE CARD ================= -->
+           <div class="carbon-card" id="carbonCard">
+            <h3>🌍 Estimated Blue Carbon Impact</h3>
+            <p class="carbon-value">
+              <span id="carbonDisplay">0</span>
+              <span class="unit">tCO₂ / year</span>
+            </p>
+            <p class="carbon-hint">
+              Calculated automatically based on ecosystem type and area restored.
+            </p>
+          </div>
+          <input type="hidden" id="co2"/>
+          <label>Contact Email</label>
+          <input
+          id="email"
+          type="email"
+          placeholder="contact@ngo.org"
+          required
+          />
+          <!-- 🔑 IMPORTANT PART -->
+           <label>Organization verification Documents (comma separated)</label>
+           <input
+          id="images"
+          type="text"
+          placeholder="https://example.com/img1.jpg, https://example.com/img2.jpg"
+          required
+          />
+          <!-- IMAGE UPLOAD GUIDELINES -->
+           <div class="image-guidelines">
+            <h4>📸 Image Upload Guidelines</h4>
+            <ul>
+              <li>Upload publicly accessible URLs to documents providing organizational Legitimacy</li>
+              <li>Document Required: GST/Tax filing</li>
+              <li>Only use <strong>public HTTPS image URLs</strong></li>
+              <li>Image URL must open directly in a new tab</li>
+              <li>Accepted formats: <code>.jpg</code>, <code>.jpeg</code>, <code>.png</code></li>
+              <li>Use <strong>comma-separated URLs</strong> for multiple images</li>
+            </ul>
+            <p class="example">
+              <strong>Example:</strong><br>
+              https://images.unsplash.com/photo-1550498178-466f87328eaa
+            </p>
+            <p class="note">
+              ❌  non-HTTPS images will not work.
+            </p>
+          </div>
+          <button type="submit" class="submit-btn">
+            Submit Project for Verification
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="script.js?v=2"></script>
+</body>
+</html>

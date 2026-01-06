@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Carbon Credits | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+  
+</header>
+
+<!-- 👤 LOGGED IN BADGE (PROJECT OWNER) -->
+<div class="logged-badge owner-badge">
+  Logged in as <strong>Project Owner</strong> —
+  <span id="ownerEmailBadge">authorized owner</span>
+</div>
+
+<!-- HEADER -->
+<section class="projects-header">
+  <h1>My Carbon Credits</h1>
+  <p>
+    Track verification, land allocation, and credit allotment
+    for your registered restoration projects.
+  </p>
+</section>
+
+<!-- 🚀 DYNAMIC DASHBOARD -->
+<section class="projects-grid" id="ownerProjects">
+  <!-- 🔥 PROJECT CARDS WILL BE INJECTED HERE BY script.js -->
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

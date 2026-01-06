@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verifier Application | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+
+  </nav>
+</header>
+
+<section class="register-section">
+  <div class="register-card" style="width:580px;">
+    <h1>Apply to Become a Verifier</h1>
+    <p class="subtext">
+      Verifiers are trusted experts responsible for validating restoration data.
+    </p>
+
+    <!-- 🔥 FORM WITH FUNCTIONALITY -->
+    <form id="verifierRegisterForm">
+
+      <label>Full Name</label>
+      <input id="verifierName" type="text" placeholder="Your full name" required />
+
+      <label>Role</label>
+      <select id="verifierRole" required>
+        <option value="">Select role</option>
+        <option>Forest Officer</option>
+        <option>Environmental Scientist</option>
+        <option>NGO Representative</option>
+        <option>Other</option>
+      </select>
+
+      <label>If Other, specify</label>
+      <input id="verifierOtherRole" type="text" placeholder="Specify your role (if applicable)" />
+
+      <label>Organization / Department</label>
+      <input id="verifierOrg" type="text" placeholder="Forest Department / University / NGO" required />
+
+      <label>Years of Relevant Experience</label>
+      <input id="verifierExperience" type="number" placeholder="5" required />
+
+      <label>Reason for Applying</label>
+      <textarea id="verifierReason" rows="4"
+        placeholder="Explain your expertise and why you should be a verifier"
+        required></textarea>
+
+      <label>Email</label>
+      <input id="verifierEmail" type="email" placeholder="official@email.gov" required />
+
+      <label>Password</label>
+      <input id="verifierPassword" type="password" placeholder="Create a password" required />
+
+      <label>Upload ID / Proof Document</label>
+      <input id="verifierProof" type="file" />
+
+      <button class="submit-btn">Submit Application</button>
+    </form>
+
+    <p style="margin-top:12px; font-size:0.8rem; color:#666;">
+      Applications are reviewed by the credit authority before approval.
+    </p>
+  </div>
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

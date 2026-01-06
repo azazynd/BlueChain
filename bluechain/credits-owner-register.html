@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Owner Registration | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+</header>
+
+<!-- REGISTRATION SECTION -->
+<section class="register-section">
+  <div class="register-card" style="max-width:600px;">
+
+    <h1>Register as Project Owner</h1>
+    <p class="subtext">
+      Register your organization to track carbon credits allotted
+      to your verified restoration projects.
+    </p>
+
+    <!-- 🔥 IMPORTANT: ID ADDED -->
+    <form id="ownerRegisterForm">
+
+      <label>Organization Name</label>
+      <input
+        type="text"
+        id="ownerOrganization"
+        placeholder="Company / NGO / Organization name"
+        required
+      />
+
+      <label>Organization Type</label>
+      <select id="ownerType" required>
+        <option value="">Select type</option>
+        <option>Manufacturing Company</option>
+        <option>Infrastructure Company</option>
+        <option>Energy / Power Company</option>
+        <option>NGO / CSR Initiative</option>
+        <option>Other</option>
+      </select>
+
+      <label>Official Email</label>
+      <input
+        type="email"
+        id="ownerEmail"
+        placeholder="official@email.com"
+        required
+      />
+
+      <label>Create Password</label>
+      <input
+        type="password"
+        id="ownerPassword"
+        placeholder="Create a password"
+        required
+      />
+
+      <label>Confirm Password</label>
+      <input
+        type="password"
+        id="ownerConfirmPassword"
+        placeholder="Re-enter password"
+        required
+      />
+
+      <label>Registered Restoration Project (Optional)</label>
+      <input
+        type="text"
+        id="ownerProject"
+        placeholder="Project name (if already registered)"
+      />
+
+      <button type="submit" class="submit-btn">
+        Register Project Owner
+      </button>
+
+    </form>
+
+    <p style="margin-top:14px; font-size:0.85rem; text-align:center;">
+      Already registered?
+      <a href="credits-owner-login.html" style="color:#1b7f5a; font-weight:600;">
+        Login here
+      </a>
+    </p>
+
+  </div>
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

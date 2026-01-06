@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Government Authority Login | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+</header>
+
+<!-- ========================= -->
+<!-- ADMIN LOGIN LAYOUT -->
+<!-- ========================= -->
+<section class="register-section">
+
+  <div class="admin-login-layout">
+
+    <!-- 🛡️ DEMO CREDENTIALS CARD (LEFT, OUTSIDE FORM) -->
+    <div class="demo-card">
+      <h3>🛡️ Demo Government Authority Access</h3>
+      <p class="demo-sub">
+        Use the following credentials to access the
+        <strong>Carbon Credit Allotment Dashboard</strong>.
+      </p>
+
+      <div class="demo-creds">
+        <p><strong>Username:</strong> admin</p>
+        <p><strong>Password:</strong> root</p>
+      </div>
+
+      <p class="demo-note">
+        ⚠️ This login is for demo & evaluation purposes only.
+      </p>
+    </div>
+
+    <!-- 🔐 EXISTING LOGIN FORM (CENTERED) -->
+    <div class="register-card" style="max-width:520px;">
+
+      <h1>Government Carbon Authority</h1>
+      <p class="subtext">
+        Authorized access for carbon credit allotment officials.
+      </p>
+
+      <form id="adminLoginForm">
+
+        <label>Authority Department</label>
+        <select required>
+          <option value="">Select department</option>
+          <option>Ministry of Environment, Forest & Climate Change (MoEFCC)</option>
+          <option>State Forest & Climate Department</option>
+          <option>National Carbon Registry</option>
+        </select>
+
+        <label>Username</label>
+        <input type="text" id="adminUsername" placeholder="admin" required />
+
+        <label>Password</label>
+        <input type="password" id="adminPassword" placeholder="root" required />
+
+        <p id="adminError" style="color:#d9534f; font-size:0.85rem; display:none;">
+          Invalid username or password.
+        </p>
+
+        <button type="submit" class="submit-btn">
+          Login to Credit Dashboard
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

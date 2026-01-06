@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verifier Login | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+</header>
+
+<!-- 🔥 TWO-COLUMN LAYOUT -->
+<section class="register-section verifier-layout">
+
+  <!-- 🟩 LEFT DEMO INFO CARD -->
+  <div class="info-card">
+    <h3>🔎 Demo Verifier Access</h3>
+    <p>
+      For <strong>demo / judging purposes</strong>, you may log in using:
+    </p>
+    <ul>
+      <li><strong>Email:</strong> official@gmail.com</li>
+      <li><strong>Password:</strong> 17232426</li>
+    </ul>
+    <p style="margin-top:10px;">
+      Alternatively, you can apply to become a verifier and log in using
+      your approved verifier credentials.
+    </p>
+  </div>
+
+  <!-- 🟦 LOGIN FORM (UNCHANGED) -->
+  <div class="register-card">
+    <h1>Verifier Login</h1>
+    <p class="subtext">
+      Access granted only to approved verification authorities.
+    </p>
+
+    <form id="verifierLoginForm">
+
+      <label>Role</label>
+      <select id="verifierRole" required>
+        <option value="">Select your role</option>
+        <option value="Forest Officer">Forest Officer</option>
+        <option value="Environmental Scientist">Environmental Scientist</option>
+        <option value="NGO Representative">NGO Representative</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Email</label>
+      <input
+        id="loginEmail"
+        type="email"
+        placeholder="official@email.gov"
+        required
+      />
+
+      <label>Password</label>
+      <input
+        id="loginPassword"
+        type="password"
+        placeholder="********"
+        required
+      />
+
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+
+    <p style="margin-top:14px; font-size:0.85rem; text-align:center;">
+      Not an approved verifier?
+      <a href="verify-register.html" style="color:#1b7f5a; font-weight:600;">
+        Apply to become a verifier
+      </a>
+    </p>
+  </div>
+
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Credit Allotment Dashboard | BlueChain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">BlueChain</div>
+  <nav class="nav-pills">
+    <a href="index.html" class="pill active">Home</a>
+    <a href="register.html" class="pill">Register a Project</a>
+    <a href="verify-login.html" class="pill">Verifier Page</a>
+    <a href="projects.html" class="pill">Public Ledger</a>
+    <a href="credits-owner-login.html" class="pill owner">Project Owner Login</a>
+    <a href="credits.html" class="pill">Authority Login</a>
+  </nav>
+</header>
+
+<!-- ========================= -->
+<!-- CREDIT ALLOTMENT HEADER -->
+<!-- ========================= -->
+<section class="projects-header">
+  <h1>Carbon Credit Allotment</h1>
+  <p>
+    Review verified restoration projects and allot carbon credits
+    based on environmental impact.
+  </p>
+</section>
+
+<!-- 🧭 ADMIN INFO STRIP (NEW, NON-INTRUSIVE) -->
+<section class="admin-info-strip">
+  <!-- LEFT CARD -->
+  <div class="admin-hint-card">
+    <h4>🧭 Demo Tip</h4>
+    <p>
+      This dashboard has <strong>two responsibilities</strong>.
+      <br><br>
+      ⬇️ Please scroll to the <strong>bottom of the page</strong> to view
+      <strong>Verifier Applications</strong> after credit allotment.
+    </p>
+  </div>
+
+  <!-- RIGHT CARD -->
+  <div class="admin-identity-card">
+    <span class="badge-label">Logged in as</span>
+    <h3>🏛 Government Carbon Authority</h3>
+    <p class="badge-sub">
+      Highest approval authority for carbon credits
+    </p>
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- PROJECT ALLOTMENT LIST -->
+<!-- ========================= -->
+<section class="projects-grid" id="creditProjects">
+  <!-- 🔥 JS injects APPROVED projects here -->
+</section>
+
+<!-- ========================= -->
+<!-- VERIFIER APPLICATIONS -->
+<!-- ========================= -->
+<section class="projects-header" style="margin-top:60px;">
+  <h1>Verifier Applications</h1>
+  <p>
+    Review and approve expert authorities applying to verify projects.
+  </p>
+</section>
+
+<section class="projects-grid" id="verifierRequests">
+  <!-- 🔥 JS injects verifier approval cards here -->
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
