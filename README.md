@@ -162,11 +162,10 @@ This design allows easy future integration with real gateways (Razorpay, Stripe,
 
 ![Home Page](screenshots/home.png)
 ![Register a Project](screenshots/register_project.png)
-![Verifier Dashboard](screenshots/verifier_dash1.png)
+![Verifier Dashboard](screenshots/verifier_das1.png)
 ![Verifier Dashboard](screenshots/verifier_dash2.png)
 ![Authority Dashboard](screenshots/auth_dash1.png)
 ![Authority Dashboard](screenshots/auth_dash2.png)
-
 ![Project Owner Dashboard](screenshots/owner_dash.png)
 ![Public Ledger](screenshots/public_ledger.png)
 
@@ -177,6 +176,8 @@ This design allows easy future integration with real gateways (Razorpay, Stripe,
 	•	HTML
 	•	CSS
 	•	JavaScript
+	•	Google Firestore database
+	•	Google Firebase App hosting
 	•	Browser Local Storage (Demo Auth)
 
 ⸻
