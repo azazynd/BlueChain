@@ -158,15 +158,19 @@ This design allows easy future integration with real gateways (Razorpay, Stripe,
 ⸻
 
 🖼️ Screenshots
-
-
+ Home page 
 ![Home Page](screenshots/home.png)
+Register page
 ![Register a Project](screenshots/register_project.png)
+Verifier Dashboard
 ![Verifier Dashboard](screenshots/verifier_das1.png)
 ![Verifier Dashboard](screenshots/verifier_dash2.png)
+Authority Dashboard
 ![Authority Dashboard](screenshots/auth_dash1.png)
 ![Authority Dashboard](screenshots/auth_dash2.png)
+Project Owner Dashboard
 ![Project Owner Dashboard](screenshots/owner_dash.png)
+Public Ledger
 ![Public Ledger](screenshots/public_ledger.png)
 
 
