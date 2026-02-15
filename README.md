@@ -7,6 +7,8 @@ A Role-Based Platform for Transparent Carbon Credit Verification & Allotment
 Built for Smart India Hackathon (SIH)
 A demo-ready system showcasing how carbon credits can be transparently managed using role-based governance and auditable workflows.
 
+project link : https://bluechain-406d2.web.app
+
 ⸻
 
 📌 Purpose of the Project
